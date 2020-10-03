@@ -82,7 +82,7 @@ class GameScene: SKScene {
         playerNode.addChild(playerSprite)
         
         // Positioning
-        playerSprite.position = CGPoint(x: screenWidth * 0.15, y: screeHeight * 0.4)
+        playerSprite.position = CGPoint(x: screenWidth * 0.15, y: screeHeight * 0.435)
         playerSprite.run(SKAction.repeatForever(runningAnimation))
     }
     
@@ -95,7 +95,7 @@ class GameScene: SKScene {
         
         // Ground size
         let homeButtonPadding = 50.0 as CGFloat
-        groundHeight = groundTexture.size().height*1.2 + homeButtonPadding
+        groundHeight = groundTexture.size().height*1.4 + homeButtonPadding
         
         // Ground movement
         let moveGroundLeft = SKAction.moveBy(x: -groundTexture.size().width, y: 0.0, duration: TimeInterval(screenWidth /    groundSpeed))
