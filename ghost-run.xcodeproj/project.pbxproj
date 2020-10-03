@@ -25,7 +25,7 @@
 		F77005F7252827510019D5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F77005F9252827540019D5F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F77005FB252827540019D5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F77006042528294F0019D5F5 /* game.assets */ = {isa = PBXFileReference; lastKnownFileType = file; path = game.assets; sourceTree = SOURCE_ROOT; };
+		F77006042528294F0019D5F5 /* game.assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = game.assets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
