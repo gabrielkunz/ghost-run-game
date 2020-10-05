@@ -48,7 +48,7 @@ class GameScene: SKScene {
         
         // Ground
         groundNode = SKNode()
-        groundNode.zPosition = background
+        groundNode.zPosition = foreground
         createGround()
         
         // Player
@@ -68,22 +68,30 @@ class GameScene: SKScene {
         let playerScale = 0.3 as CGFloat
         
         // Player texture
-        let playerTexture = SKTexture(imageNamed: "game.assets/player")
-        playerTexture.filteringMode = .nearest
+        let playerTexture1 = SKTexture(imageNamed: "game.assets/floating/1")
+        let playerTexture2 = SKTexture(imageNamed: "game.assets/floating/2")
+        let playerTexture3 = SKTexture(imageNamed: "game.assets/floating/3")
+        let playerTexture4 = SKTexture(imageNamed: "game.assets/floating/4")
+        let playerTexture5 = SKTexture(imageNamed: "game.assets/floating/5")
+        playerTexture1.filteringMode = .nearest
+        playerTexture2.filteringMode = .nearest
+        playerTexture3.filteringMode = .nearest
+        playerTexture4.filteringMode = .nearest
+        playerTexture5.filteringMode = .nearest
         
         // Animation
-        let runningAnimation = SKAction.animate(with: [playerTexture], timePerFrame: 0.12)
+        let floatingAnimation = SKAction.animate(with: [playerTexture1, playerTexture2, playerTexture3, playerTexture4, playerTexture5], timePerFrame: 0.06)
         
         
         // Size and scale
         playerSprite = SKSpriteNode()
-        playerSprite.size = playerTexture.size()
+        playerSprite.size = playerTexture1.size()
         playerSprite.setScale(playerScale)
         playerNode.addChild(playerSprite)
         
         // Positioning
         playerSprite.position = CGPoint(x: screenWidth * 0.15, y: screeHeight * 0.435)
-        playerSprite.run(SKAction.repeatForever(runningAnimation))
+        playerSprite.run(SKAction.repeatForever(floatingAnimation))
     }
     
     func createGround(){
